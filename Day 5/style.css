@@ -1,0 +1,57 @@
+h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: coral;
+}
+.form1{
+    text-align: center;
+    background-color: palegoldenrod;
+}
+label{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200px;
+    display: inline-block;
+            width: 140px;   /* fixed width for alignment */
+            font-weight: bold;
+            margin-bottom: 8px;
+}
+input, select, textarea {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        border-radius: 100px;}
+
+.form2{
+    text-align: center;
+    background-color: palegreen;
+}
+
+.form3{
+    text-align: center;
+    background-color: papayawhip;
+}
+
+.form4{
+    text-align: center;
+    background-color: peachpuff;
+}
+button{
+    
+    display: inline-block;
+            width: 140px; 
+            border-radius: 20px;
+           
+            
+
+}
+.btn{
+    
+    display: inline-block;
+               margin-top: 20px;
+
+              align-items:center;
+              
+}
+            
+            
