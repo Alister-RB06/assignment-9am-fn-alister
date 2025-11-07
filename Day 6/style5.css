@@ -1,0 +1,23 @@
+body{
+    background-color: chartreuse;
+}
+#heading{
+color: brown;
+    background-color:lightslategray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 650px;}
+
+    .des{
+         margin-top: 250px;
+        color: darkred;
+        font-weight: 200px;
+        padding: 20px;
+        border: 6px dotted darkorchid;
+        border-radius: 10px;
+        
+    }
+footer{
+    margin-top: 250px;
+    text-align: center;
+    color: darkviolet;
+}

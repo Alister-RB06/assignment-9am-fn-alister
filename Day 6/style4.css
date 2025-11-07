@@ -1,0 +1,17 @@
+.para{
+    margin-top: 50px;
+    padding: 20px;
+    background-color:springgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    background-color: bisque;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+#heading{
+    color:darkgrey;
+    background-color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 750px;}
