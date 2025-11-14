@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Demo</title>
+
+  <style>
+    /* Relative box */
+    .box1 {
+      width: 150px;
+      height: 150px;
+      background: lightblue;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+
+    /* Absolute box */
+    .box2-wrapper {
+      position: relative; 
+      height: 200px;
+      background: #eee;
+      margin-top: 30px;
+    }
+    .box2 {
+      width: 150px;
+      height: 150px;
+      background: lightgreen;
+      position: absolute;
+      top: 20px;
+      left: 200px;
+    }
+
+    
+    .box3 {
+      width: 120px;
+      height: 120px;
+      background: orange;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Relative Box</h2>
+  <div class="box1"></div>
+
+  <h2>Absolute Box </h2>
+  <div class="box2-wrapper">
+    <div class="box2"></div>
+  </div>
+
+  <h2>Fixed Box </h2>
+  <div class="box3"></div>
+
+</body>
+</html>
