@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1 </title>
+    <style>
+        .box {
+            padding: 10px;
+            margin: 5px;
+            background: lightblue;
+            border: 1px solid #000;
+        }
+
+       
+        .block {
+            display: block;
+        }
+
+       
+        .inline {
+            display: inline;
+        }
+
+        
+        .inline-block {
+            display: inline-block;
+            width: 120px;
+        }
+
+        
+        .none {
+            display: none;
+        }
+
+        
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+       
+        .grid-container {
+            display: grid;
+            grid-template-columns: (1fr, 1fr, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h2>Block Elements</h2>
+    <div class="box block">Block 1</div>
+    <div class="box block">Block 2</div>
+
+    <h2>Inline Elements</h2>
+    <span class="box inline">Inline 1</span>
+    <span class="box inline">Inline 2</span>
+
+    <h2>Inline-Block Elements</h2>
+    <div class="box inline-block">Inline-Block 1</div>
+    <div class="box inline-block">Inline-Block 2</div>
+
+    <h2>Display: none (hidden element below)</h2>
+    <div class="box none">You cannot see me</div>
+
+    <h2>Flexbox</h2>
+    <div class="flex-container">
+        <div class="box">Flex 1</div>
+        <div class="box">Flex 2</div>
+        <div class="box">Flex 3</div>
+    </div>
+
+    <h2>Grid</h2>
+    <div class="grid-container">
+        <div class="box">Grid 1</div>
+        <div class="box">Grid 2</div>
+        <div class="box">Grid 3</div>
+    </div>
+</body>
+</html>
