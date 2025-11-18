@@ -1,0 +1,69 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 8 - Dashboard Layout Using CSS Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /* 3 columns */
+            grid-template-rows: auto 200px 1fr; /* header, stats, main */
+            gap: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #000;
+        }
+
+        .header {
+            grid-column: span 3;
+            background: lightblue;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .stat1, .stat2, .stat3 {
+            background: #ffe4b5;
+            border: 2px solid #000;
+        }
+
+        .main-content {
+            grid-column: span 2;
+            background: #e0f7fa;
+        }
+
+        .sidebar {
+            background: #ffd1dc;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="dashboard">
+        <div class="box header">Dashboard Header</div>
+
+        <div class="box stat1">Stat Box 1</div>
+        <div class="box stat2">Stat Box 2</div>
+        <div class="box stat3">Stat Box 3</div>
+
+        <div class="box main-content">Main Content Area</div>
+        <div class="box sidebar">Sidebar Widgets</div>
+    </div>
+
+</body>
+</html>

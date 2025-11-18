@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 10 - Portfolio Page Using Grid Template Areas</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f4f4;
+        }
+
+        
+        .portfolio {
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: auto auto auto ;
+            grid-template-areas:
+                "header  header"
+                "profile projects"
+                "footer  footer";
+            gap: 20px;
+            padding: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            border: 2px solid #000;
+        }
+
+        .profile {
+            grid-area: profile;
+            background: white;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+
+        .profile img {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .projects {
+            grid-area: projects;
+            background: white;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .project-box {
+            background: #e0f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #008c9e;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align:center; padding:20px;">Task 10: Portfolio Page Using Grid Template Areas</h1>
+
+    <div class="portfolio">
+        <header>My Portfolio</header>
+
+        <div class="profile">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            <h2>John Doe</h2>
+            <p>Frontend Developer</p>
+        </div>
+
+        <div class="projects">
+            <div class="project-box">Project 1</div>
+            <div class="project-box">Project 2</div>
+            <div class="project-box">Project 3</div>
+            <div class="project-box">Project 4</div>
+        </div>
+
+        <footer>© 2025 My Portfolio</footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4 - Align Self (Flexbox)</title>
+
+    <style>
+        .container {
+            display: flex;
+            height: 200px;
+            background: #eaeaea;
+            border: 2px solid #000;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .box {
+            background: lightsalmon;
+            padding: 20px;
+            border: 2px solid #000;
+            width: 120px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .bottom-box {
+            align-self: flex-end; /* Align only this item at the bottom */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Task 4: Align a Flex Item to the Bottom using align-self</h1>
+
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box bottom-box">Box 2 (Bottom)</div>
+        <div class="box">Box 3</div>
+    </div>
+
+</body>
+</html>
